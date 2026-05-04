@@ -9,31 +9,37 @@ Assignment 1 ITPM   https://www.pixelssuite.com/chat-translator
     Student Registration Number: IT23820678
 
     Target System: Swift Translator (Option 1 - Singlish to Sinhala)
+📂 Repository Structure
+       test_automation.py` - The main Python Playwright script that automates the browser interaction.
+       Assignment_1 Test Cases.xlsx` - The Excel file containing the 50 negative test cases designed to fail the application's transliteration logic. The script reads inputs from here and automatically writes the Actual Outputs and Statuses back to the file.
+       README.md` - Documentation and execution instructions.
+
 
     List the software required to run the project.
 
-    Node.js.
+    Install Phython 
 
-    npm: (comes with Node.js).
+    Node.js.
 
     Installation Instructions
 
-    git clone 
+    git clone - https://github.com/LashanRavihara/test_automation.git
 
-    npm install and npx playwright install (Installs Playwright and all dependencies)
-
+     from current directory in Command Prompt (i.e., D:\test_automation), run the following 
+     commands: 
+    • pip install -U pip 
+    • pip install playwright openpyxl 
+    • playwright install
+    
     Running the Tests
 
-    Run all tests: npx playwright test
 
-    Run tests with : npx playwright test --project=chromium or npx playwright test --project=firefox
 
-    View HTML Report: npx playwright show-report
+    Run tests cmd terminal : python test_automation.py --excel "Assignment 1 - Test cases.xlsx" --url "https://www.pixelssuite.com/chat-translator" --wait-ms 8000 --type-delay-ms 80 --slow-mo-ms 200 --save-every 1 --keep-open
+    
 
-    Project Structure
+   
 
-    test: Contains the Playwright test scripts.
-
-    playwright.config.js: The configuration file for target URL and browsers.
+    
 
   
